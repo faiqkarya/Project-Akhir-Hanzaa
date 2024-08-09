@@ -50,7 +50,7 @@
                         <path d="M16 5l3 3"></path>
                     </svg>
                     </Link>
-                    <x-splade-form action="{{ route('items.destroy', $items->id) }}" confirm="Delete Data" confirm-text="Are you sure you want to delete your post data?" confirm-button="Yes, delete everything!" cancel-button="No, I want to stay!" method="delete">
+                    <x-splade-form action="{{ route('items.destroy', $items->id) }}" confirm="Delete Data" confirm-text="Apakah anda yakin ingin menghapus data ini?" confirm-button="Ya" cancel-button="No" method="delete">
                         <button type="submit" class="rounded-full p-2 bg-rose-300 text-white hover:bg-rose-400">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-trash w-5 h-5" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
