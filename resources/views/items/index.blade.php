@@ -29,7 +29,7 @@
                 @endcell
 
                 @cell('deskripsi', $items)
-                <div style="width: 300px; overflow: auto; text-overflow: ellipsis; white-space: nowrap;">
+                <div style="width: 300px; overflow: scroll; white-space: wrap;">
                     {{ $items->deskripsi }}
                 </div>
                 @endcell

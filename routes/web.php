@@ -41,9 +41,8 @@ Route::middleware('splade')->group(function () {
             return view('dashboard');
         });
         
-        Route::get('/dashboard', function () {
-            return view('dashboard');
-        })->middleware(['verified'])->name('dashboard');
+        Route::get('/dashboard', [DashboardController::class, 'index'])->middleware(['verified'])->name('dashboard');
+
 
         Route::resource('/customers', CustomerController::class);
         Route::resource('/items', ItemController::class);
