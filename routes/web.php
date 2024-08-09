@@ -37,9 +37,7 @@ Route::middleware('splade')->group(function () {
     
 
     Route::middleware('auth')->group(function () {
-        Route::get('/', function () {
-            return view('dashboard');
-        });
+        Route::get('/',[DashboardController::class, 'index'])->middleware(['verified'])->name('dashboard');
         
         Route::get('/dashboard', [DashboardController::class, 'index'])->middleware(['verified'])->name('dashboard');
 
